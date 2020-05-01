@@ -1,6 +1,3 @@
-console.log('js file loaded')
-
-
 const weatherform = document.querySelector('form')
 const search =document.querySelector('input')
 const msg1 =document.querySelector('#msg1')
