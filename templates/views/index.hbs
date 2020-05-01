@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>home</title>
+        <link rel = "icon" href="/images/weather.png">
+        <link rel = "stylesheet" href = "/css/styles.css">
+       
+    </head>
+        
+    </head>
+    <body>
+        <div class="sticky">
+            {{>header}}
+            <p>use this website to get latest weather</p>
+            <form>
+
+                <input  placeholder="location">
+                <button>search</button>
+            </form>
+            <p id='msg1'></p>
+            <p id='msg2' ></p>
+            <p id = 'msg3'></p>
+        </div>
+        
+        {{>footer}}
+         <script src="/js/app.js"></script>
+    </body>
+</html>
