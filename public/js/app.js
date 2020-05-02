@@ -21,7 +21,7 @@ msg3.textContent=''
         else{
             msg1.textContent=data.location 
             msg2.textContent=data.temperature +" degree temperature outside"
-            msg3.textContent="It look like" + data.description 
+            msg3.textContent="it look like "+data.description 
         }
     })
 })
