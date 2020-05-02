@@ -9,6 +9,7 @@ const hbs = require('hbs')
 const geocode = require('./geocode')
 const forecast = require('./forecast')
 const app = express()
+const port=process.env.PORT || 3000 //  for heroku either web or local
 
 // define path for express
 const publicdirectory = path.join(__dirname,'../public')
@@ -88,8 +89,11 @@ app.get('*',(req,res)=>{
         errormsg: 'page nnot found'
     })
 })
-app.listen(3000,()=>{
-    console.log('server started')
+// app.listen(3000,()=>{
+//     console.log('server started')     /// local hosting
+// })
+app.listen(port,()=>{
+    console.log('server started')     /// local hosting
 })
 
 
