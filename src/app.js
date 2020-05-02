@@ -39,7 +39,7 @@ app.get('',(req,  res)=>{
 app.get('/help',(req,  res)=>{
     res.render('help.hbs',{
         title: 'help page',
-        name: 'raj'
+        name: 'mohan'
     })
 })
 
@@ -77,7 +77,7 @@ app.get('/weather',(req,res)=>{
 app.get('/help/*',(req,res)=>{
     res.render('404',{
         title:'404 error',
-        name:'raj',
+        name:'mohan',
         errormsg: 'help article not found'
     })
 })

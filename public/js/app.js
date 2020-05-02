@@ -19,9 +19,9 @@ msg3.textContent=''
             msg1.textContent=data.error
         }
         else{
-            msg1.textContent=data.location
-            msg2.textContent=data.temperature
-            msg3.textContent=data.description
+            msg1.textContent=data.location 
+            msg2.textContent=data.temperature +" degree temperature outside"
+            msg3.textContent="It look like" + data.description 
         }
     })
 })
